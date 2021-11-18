@@ -38,13 +38,9 @@ app.get('/mysql', (req, res) => {
 
   connection.query('SELECT * from Users', (error, rows, fields) => {
     if (error) throw error;
-    //console.log('User info is: ', rows);
-    res.send('User info is: ', rows);
+    console.log('User info is: ', rows);
+    //res.send('User info is: ', rows);
   });
-
-  
 });
-
-
 app.listen(PORT, HOST);
 console.log(`Running on http://${HOST}:${PORT}`);
