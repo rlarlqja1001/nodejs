@@ -39,7 +39,7 @@ app.get('/mysql', (req, res) => {
   connection.query('SELECT * from Users', (error, rows, fields) => {
     if (error) throw error;
     console.log('User info is: ', rows);
-    res.json(rows);
+    //res.json(rows);
     //res.send('User info is: ', rows);
   });
 });
