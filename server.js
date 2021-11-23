@@ -20,8 +20,6 @@ app.get('/helloworld', (req, res) => {
   res.send('Helloworld.\n');
 });
 
-
-
 app.get('/mysql', (req, res) => {
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/plain');
@@ -38,7 +36,7 @@ app.get('/mysql', (req, res) => {
 
   connection.query('SELECT * from Users', (error, rows, fields) => {
     if (error) throw error;
-    console.log('User info is: ', rows);
+    //console.log('User info is: ', rows);
     res.json(rows);
     //res.send('User info is: ', rows);
   });
