@@ -11,13 +11,13 @@ const app = express();
 app.get('/', (req, res) => {
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/plain');
-  res.send('Run nodejs on Accordion.\n');
+  res.send('<h1>Run nodejs on Accordion.\n</h1>');
 });
 
 app.get('/helloworld', (req, res) => {
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/plain');
-  res.send('Helloworld.\n');
+  res.send('<h1>Helloworld.\n</h1>');
 });
 
 app.get('/mysql', (req, res) => {
