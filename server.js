@@ -11,13 +11,13 @@ const app = express();
 app.get('/', (req, res) => {
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/plain');
-  res.send('<h1>Run nodejs on Accordion.</h1>\n');
+  res.send('Run nodejs on Accordion.\n');
 });
 
 app.get('/helloworld', (req, res) => {
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/plain');
-  res.send('<h1>Helloworld.</h1>\n');
+  res.send('Helloworld.\n');
 });
 
 app.get('/mysql', (req, res) => {
@@ -43,3 +43,7 @@ app.get('/mysql', (req, res) => {
 });
 app.listen(PORT, HOST);
 console.log(`Running on http://${HOST}:${PORT}`);
+
+
+
+
